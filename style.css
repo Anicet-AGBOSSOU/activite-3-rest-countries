@@ -1,0 +1,89 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4
+}
+
+header{
+    background: #4CAF50;
+    color: white;
+    padding: 1rem 0;
+    text-align: center
+}
+
+#country-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px
+}
+
+.country-card{
+    background: rgb(217, 211, 211);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(193, 70, 70, 0.1)
+}
+
+.country-card img{
+    width: 100%
+}
+
+.country-card h2{
+    margin: 0;
+    padding: 15px;
+    background: #99a099;
+    color: white;
+    text-align: center;
+}
+
+.country-card p{
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+}
+
+footer{
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container{
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.footer-info, .footer-social , .footer-detail{
+    flex: 1;
+    margin: 0 20px
+}
+
+.footer-info h3, .footer-social h3, .footer-detail h3{
+    margin-bottom: 10px;
+}
+
+.footer-social a, .footer-detail a{
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover, .footer-detail a:hover{
+    color: #f39c12
+}
+
+.footer-bottom{
+    border-top: 1px solid #dddddd;
+   padding:10px 0;
+   margin-top: 20px
+}
